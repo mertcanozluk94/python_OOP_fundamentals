@@ -1,38 +1,25 @@
-# season = input('lutfen mevsimi gir:').lower()
+# user = input ('enter name:')
+# password = input('enter pass:')
 
-# if season == "kis":
-#     print("kis aylari")
-# elif season == "yaz":
-#     print("yaz aylari")
-# elif season == "sonbahar":
-#     print("sonbahar aylari")
-# elif season == 'ilkbahar':
-#     print("ilkbahar aylari")
-# else:
-#     print("hicbiri yok")
-
-# isim = input ('ismi giriniz:')
-# parola = input('parolayi gir:')
-
-# if isim == 'kerem' and parola == 'mrv123':
-#     print(f'{isim} giris basarili')
-#     boy = float(input('boyu gir:'))
-#     kilo = float(input('kiloyu gir:'))
-#     bmi = kilo / (boy *2)
-#     sonuc = None
+# if user == 'kerem' and password == 'mrv123':
+#     print(f'{user} giris basarili')
+#     height = float(input('enter height:'))
+#     weight = float(input('enter weight:'))
+#     bmi = weight / (height *2)
+#     result = None
     
 #     if bmi > 0 and bmi < 20:
-#         sonuc = "1"
+#         result = "1"
 #     elif bmi <20.1 and bmi >40:
-#         sonuc = '2'
+#         result = '2'
 #     elif bmi <40.1 and bmi >60:
-#         sonuc = '3'
-#     print(f'kullanici: {isim}'
+#         result = '3'
+#     print(f'user: {user}'
 #           f' bmi: {bmi}'
-#           f' sonuc: {sonuc}')
+#           f' result: {result}')
 
 # else:
-#     print('oyle user yok')
+#     print('no user')
 
 # # Nested If
 # vehicle = input('Vehicle: ').lower()
@@ -59,37 +46,37 @@
 # else:
 #     print('Invalid speed value..!')
 
-# mevsim = input('mevsimi gir:').lower()
-# match mevsim:
-#     case 'kis':
-#         print('kis mevsimleri')
-#     case 'yaz':
-#         print('yaz mevsimleri')
-#     case 'ilkbahar':
-#         print('ilkbahari mevsimleri')
-#     case 'sonbahar':
-#         print('sonbahari mevsimleri')
+# season = input('enter season:').lower()
+# match season:
+#     case 'winter':
+#         print('winter season')
+#     case 'summer':
+#         print('summer season')
+#     case 'spring':
+#         print('spring season')
+#     case 'autumn':
+#         print('autumn season')
 #     case _:
-#         print('hicbiri yok')
+#         print('none of season')
 # hatalı kodu ignore edip yoluna devam eder try/except/finally asagidaki ornekte 0 a bolunme var
 # try:
-#     bolen = int (input('bolen:'))
-#     bolunen = int(input('bolunen:'))
-#     sonuc = bolunen / bolen
-#     print(f'Sonuc: {sonuc}')
+#     dividing = int (input('dividing:'))
+#     divided = int(input('divided:'))
+#     result = divided / dividing
+#     print(f'result: {result}')
 # except ZeroDivisionError as err:
 #     print(err)
 # finally:
-#     print('baglanti kopariliyor')
+#     print('no connection')
 
 try:
-    age = int(input('yas:'))
-    print(f'yas: {yas}')
+    age = int(input('age:'))
+    print(f'age: {age}')
 except ValueError as err:
-    print('yas bilgisi harf icermez')
+    print('doesnt contain letters')
 except ZeroDivisionError as err:
     print (err)
 except:
-    print('python icerisinde built in olan tüm exceptionlara bakar')
+    print('Python checks for all built-in exceptions.')
 else:
-    print('except tetiklenmezse else calisir')
+    print('It works unless the exception trigger is activated.')
