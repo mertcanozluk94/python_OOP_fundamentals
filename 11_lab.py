@@ -43,7 +43,7 @@ toplam(5,9)
 # print(sum_result)
 
 def remove_duplicate_word(sentence: str) -> str:
-    #path 1
+#path 1
     lst=[]
     for item in sentence.split():
         if item not in lst:
@@ -53,7 +53,7 @@ def remove_duplicate_word(sentence: str) -> str:
     return str_output
 result= remove_duplicate_word(sentence="merhaba ben burak merhaba ben burak")
 print(result)
-    #path 2
+#path 2
 lst_1= [item for item in sentence.split()]
 lst_2= set(lst_1)
 str_output=' '.join(lst_2)
